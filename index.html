@@ -1,158 +1,429 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
-  <title>April Graves</title>
+
+  <!--- Basic Page Needs
+   ================================================== -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css">
-  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <!--[if lt IE 9]>
-<script src="js/html5.js"></script>
-<script src="js/selectivizr-min.js"></script>
-<link rel="stylesheet" href="css/ie.css" type="text/css">
-<![endif]-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery-ui-1.8.16.custom.min.js"></script>
-  <script src="js/all-in-one-min.js"></script>
-  <script src="js/setup.js"></script>
-  <script>
-    $(window).load(function () {
-      $('.flexslider').flexslider();
-    });
+  <title>April Graves Portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    $(function () {
-      $('#work').carouFredSel({
-        width: '100%',
-        scroll: 1,
-        auto: false,
-        pagination: false,
-        prev: '.prev_item',
-        next: '.next_item'
-      });
+  <!-- Mobile Specific Metas
+   ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-      $("#work").touchwipe({
-        wipeLeft: function () { $('.next_item').trigger('click'); },
-        wipeRight: function () { $('.prev_item').trigger('click'); }
-      });
-    });
+  <!-- CSS
+    ================================================== -->
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-    $(window).load(function () {
-      $('#demo-side-bar').removeAttr('style');
-    });
-  </script>
+  <!-- Script
+   ================================================== -->
+  <script src="js/modernizr.js"></script>
+
+  <!-- Favicons
+	================================================== -->
+  <link rel="shortcut icon" href="favicon.png">
+
 </head>
 
 <body>
-  <header class="header_bg clearfix">
-    <div class="container clearfix">
-      <!-- Social -->
-      <ul class="social-links">
-        <li><a href="https://github.com/AprilHGraves">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/april-h-graves/">LinkedIn</a></li>
-        <li>Email: april.graves11@gmail.com</li>
-      </ul>
-      <!-- /Social -->
-      <!-- Logo -->
-      <div class="logo">
-        <h1 class="white col_1_2">April Graves</h1>        
+
+  <!-- Header
+   ================================================== -->
+  <header id="home">
+
+    <nav id="nav-wrap">
+
+      <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+      <ul id="nav" class="nav">
+        <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+        <li><a class="smoothscroll" href="#about">About</a></li>
+        <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+        <li><a class="smoothscroll" href="#resume">Resume</a></li>
+        <li><a class="smoothscroll" href="#contact">Contact Me</a></li>
+      </ul> <!-- end #nav -->
+
+    </nav> <!-- end #nav-wrap -->
+
+    <div class="row banner">
+      <div class="banner-text">
+        <h1 class="responsive-headline">I'm April Graves.</h1>
+        <h3>To me, programming feels like solving puzzles and playing games. Piecing together code, hunting down bugs, DRYing up and
+        optimizing the final product feel fulfilling, especially when users express appreciation for it and suggest features
+        that they would like implemented. Scroll down for more information.</h3>
+        <hr />
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/april-h-graves/">LinkedIn</a></li>
+          <li><a href="https://github.com/AprilHGraves">GitHub</a></li>
+          <li><a href="https://angel.co/april-graves-1">Angel List</a></li>
+        </ul>
       </div>
-      <!-- /Logo -->
-      <!-- Master Nav -->
-      <nav class="main-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li> <a>Projects</a>
-            <ul>
-              <li><a href="conflict.html">Conflict</a></li>
-              <li><a href="lairbnb.html">LairBnB</a></li>
-              <li><a href="okfido.html">OkFido</a></li>              
-              <li><a href="huskyadventure.html">Husky Adventure</a></li>
+    </div>
+
+    <p class="scrolldown">
+      <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+    </p>
+
+  </header> <!-- Header End -->
+
+
+  <!-- About Section
+   ================================================== -->
+  <section id="about">
+
+    <div class="row">
+
+      <div class="three columns">
+
+        <img class="profile-pic" src="images/picture-of-me.png" alt="" />
+
+      </div>
+
+      <div class="nine columns main-col">
+
+        <h2>About Me</h2>
+
+        <p>While writing simple scripts in Lua for a game, I remembered my high school years when I would eagerly come home to dabble with Byond's Dream Maker language. My love for technology and using code to make things led me to change my career. I spent the past few months honing my skills in order to become a web developer. </p>
+        <p>
+          I want to work with a cooperative team committed to producing high-quality code with code review and testing. With my skills, experience, and ability to learn, I would be a great addition to your company, and I know that I could hit the ground running.
+        </p>
+
+        <div class="row">
+
+          <div class="columns">
+
+            <h2>Technologies</h2>
+            <ul class="disc">
+              <li><strong>Languages:</strong> JavaScript, Ruby, HTML5, CSS3, Sass</li>
+              <li><strong>Backend Frameworks:</strong> Ruby on Rails, Express.js</li>
+              <li><strong>JS Libraries/Tools:</strong> Babel, jQuery, React.js, Redux.js, Webpack</li>
+              <li><strong>Deploying:</strong> Docker, Heroku</li>
+              <li><strong>Querying:</strong> GraphQL, SQL</li>
+              <li><strong>Databases:</strong> MongoDB, PostgreSQL</li>
             </ul>
-          </li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
-      <!-- /Master Nav -->
-    </div>
-  </header>
 
-  <!-- About Me -->
-  <section class="homepage_widgets_bg clearfix">
-    <div class="container clearfix">
-      <div class="padding20"></div>
+          </div>
+
+        </div> <!-- end row -->
+
+      </div> <!-- end .main-col -->
+
+    </div>
+
+  </section> <!-- About Section End-->
+
+  <!-- Portfolio Section
+   ================================================== -->
+  <section id="portfolio">
+
+    <div class="row">
+
+      <div class="twelve columns collapsed">
+
+        <h1>Check Out Some of My Projects.</h1>
+
+        <!-- portfolio-wrapper -->
+        <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          <div class="columns portfolio-item">
+            <div class="item-wrap">
+
+              <a href="#modal-01" title="">
+                <img alt="" src="images/portfolio/conflict-splash.png">
+                <div class="overlay">
+                  <div class="portfolio-item-meta">
+                    <h5>Conflict</h5>
+                    <p>Discord Clone</p>
+                  </div>
+                </div>
+                <div class="link-icon"><i class="icon-plus"></i></div>
+              </a>
+
+            </div>
+          </div> <!-- item end -->
+
+          <div class="columns portfolio-item">
+            <div class="item-wrap">
+
+              <a href="#modal-02" title="">
+                <img alt="" src="images/portfolio/lairbnb-pic.png">
+                <div class="overlay">
+                  <div class="portfolio-item-meta">
+                    <h5>LairBnB</h5>
+                    <p>AirBnB Clone</p>
+                  </div>
+                </div>
+                <div class="link-icon"><i class="icon-plus"></i></div>
+              </a>
+
+            </div>
+          </div> <!-- item end -->
+
+          <div class="columns portfolio-item">
+            <div class="item-wrap">
+
+              <a href="#modal-03" title="">
+                <img alt="" src="images/portfolio/okfido-splash.png">
+                <div class="overlay">
+                  <div class="portfolio-item-meta">
+                    <h5>OkFido</h5>
+                    <p>OkCupid Clone</p>
+                  </div>
+                </div>
+                <div class="link-icon"><i class="icon-plus"></i></div>
+              </a>
+
+            </div>
+          </div> <!-- item end -->
+
+          <div class="columns portfolio-item">
+            <div class="item-wrap">
+
+              <a href="#modal-04" title="">
+                <img alt="" src="images/portfolio/husky-adventure.png">
+                <div class="overlay">
+                  <div class="portfolio-item-meta">
+                    <h5>Husky Adventure</h5>
+                    <p>HTML Canvas Game</p>
+                  </div>
+                </div>
+                <div class="link-icon"><i class="icon-plus"></i></div>
+              </a>
+
+            </div>
+          </div> <!-- item end -->          
+
+        </div> <!-- portfolio-wrapper end -->
+
+      </div> <!-- twelve columns end -->
+
+
+      <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+      <div id="modal-01" class="popup-modal mfp-hide">
+
+        <img class="scale-with-grid" src="images/portfolio/conflict-splash.png" alt="" />
+
+        <div class="description-box">
+          <h4>Conflict</h4>
+          <p>Conflict is a single-page Discord clone. Like Discord, people can create and join servers, where they can discuss a
+          variety of topics in separate channels. Server owners can invite other users to join their servers by generating invite
+          links, which can be customized to have a set duration or max-use limit. People can paste the invite link in the url or
+          when adding a server to join.</p>
+          <span class="categories"><i class="fa fa-tag"></i>Ruby on Rails, PostgreSQL, React, Redux, jQuery, AWS S3</span>
+        </div>
+
+        <div class="link-box">
+          <a href="https://conflict-discord-clone.herokuapp.com/">Live</a>&emsp;
+          <a href="https://github.com/AprilHGraves/aA-DiscordClone">GitHub</a>
+          <a class="popup-modal-dismiss">Close</a>
+        </div>
+
+      </div><!-- modal-01 End -->
+
+      <div id="modal-02" class="popup-modal mfp-hide">
+
+        <img class="scale-with-grid" src="images/portfolio/lairbnb-pic.png" alt="" />
+
+        <div class="description-box">
+          <h4>LairBnB</h4>
+          <p>LairBnB is a full stack clone of AirBnB that connects villains who want to rent out their evil lairs to everyday
+          citizens seeking something less mundane for their vacation homes.</p>
+          <span class="categories"><i class="fa fa-tag"></i>MERN stack, MongoDB, Express, React, Redux, Node, Google Maps API, React-Dates</span>
+        </div>
+
+        <div class="link-box">
+          <a href="https://villain-lairbnb.herokuapp.com">Live</a>&emsp;
+          <a href="https://github.com/Numbericons/LairBnB">GitHub</a>
+          <a class="popup-modal-dismiss">Close</a>
+        </div>
+
+      </div><!-- modal-02 End -->
+
+      <div id="modal-03" class="popup-modal mfp-hide">
+
+        <img class="scale-with-grid" src="images/portfolio/okfido-splash.png" alt="" />
+
+        <div class="description-box">
+          <h4>OkFido</h4>
+          <p>OKFido is a full stack clone of OKCupid that connects humans who want to adopt dogs with dogs seeking a home.</p>
+          <span class="categories"><i class="fa fa-tag"></i>MERN stack, MongoDB, Express, React, Node, GraphQL, React Apollo, Petfinder API, TheDogAPI</span>
+        </div>
+
+        <div class="link-box">
+          <a href="https://okfido.herokuapp.com/">Live</a>&emsp;
+          <a href="https://github.com/AprilHGraves/OKFido">GitHub</a>
+          <a class="popup-modal-dismiss">Close</a>
+        </div>
+
+      </div><!-- modal-03 End -->
+
+      <div id="modal-04" class="popup-modal mfp-hide">
+
+        <img class="scale-with-grid" src="images/portfolio/husky-adventure.png" alt="" />
+
+        <div class="description-box">
+          <h4>Husky Adventure</h4>
+          <p>In Husky Adventure, you control a husky in a sidescroller and defeat enemies by using your psychic power to fling them
+          around</p>
+          <span class="categories"><i class="fa fa-tag"></i>JavaScript, HTML 5 Canvas, Firebase</span>
+        </div>
+
+        <div class="link-box">
+          <a href="https://husky-scroller.firebaseapp.com/">Live</a>&emsp;
+          <a href="https://github.com/AprilHGraves/Husky-Adventure">GitHub</a>
+          <a class="popup-modal-dismiss">Close</a>
+        </div>
+
+      </div><!-- modal-04 End -->
+
+    </div> <!-- row End -->
+
+  </section> <!-- Portfolio Section End-->
+
+  <!-- Resume Section
+     ================================================== -->
+  <section id="resume">
+    <div class="row">
   
-      <div class="col_1_2">
-        <h1 class="regular white bottom_line">About Me</h1>
-        <p>
-          To me, programming feels like solving puzzles and playing games. Piecing together code, hunting down bugs, DRYing up and optimizing the final product feel fulfilling, especially when users express appreciation for it and suggest features that they would like implemented. 
-        </p>
-        <p>
-          My interest in programming started when I was 15. I dabbled with game scripts as a hobby, and in December 2018, I decided to hone my skills to pursue a career in the field. I have worked on several solo and group projects. You can read about my favorite ones on this site or go to my Github. 
-        </p>
-        <h2>Technologies</h2>
-        <ul class="tech-list">
-          <li>- Languages: JavaScript, Ruby, HTML5, CSS3, Sass</li>
-          <li>- Backend Frameworks: Ruby on Rails, Express.js</li>
-          <li>- JS Libraries/Tools: Babel, jQuery, React.js, Redux.js, Webpack</li>
-          <li>- Deploying: Docker, Heroku</li>
-          <li>- Querying: GraphQL, SQL</li>
-          <li>- Databases: MongoDB, PostgreSQL</li>
-        </ul>
-      </div>
-      <div class="col_1_2 last">
-        <img class="pic-of-me" src="images/picture-of-me.png" alt="April Graves" />
-      </div>
-  
-      <div class="clear padding80"></div>
+      <iframe src="Graves April Resume.pdf" width="100%" height="1175px">
+      </iframe>
     </div>
-  </section>
-  <!-- /About Me -->
+  </section> <!-- Resume Section End-->
 
-  <!-- Slider -->
-  <div class="bannerbg">
-    <div class="container clearfix">
-      <div class="flexslider">
-        <ul class="slides">
-          <li> <a href="conflict.html">
-            <img class="slider-pic" src="images/conflict-splash.png" alt="">
-            <p class="flex-caption">Conflict (Discord Clone)</p>
-          </a></li>
-          <li> <a href="lairbnb.html">
-            <img class="slider-pic" src="images/lairbnb-pic.png" alt=""> 
-            <p class="flex-caption">LairBnB (AirBnB Clone)</p>
-          </a></li>
-          <li> <a href="okfido.html">
-            <img class="slider-pic" src="images/okfido-splash.png" alt="">
-            <p class="flex-caption">OkFido (OkCupid Clone)</p>
-          </a></li>
-          <li> <a href="huskyadventure.html">
-            <img class="slider-pic" src="images/husky-adventure.png" alt="">
-            <p class="flex-caption">Husky Adventure</p>
-          </a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- /Slider -->
+  <!-- Contact Section
+   ================================================== -->
+  <section id="contact">
 
-  <!-- footer -->
-  <footer class="footer_bg_bottom clearfix">
-    <div class="footer_bottom container">
-      <div class="col_2_3">
-        <div class="clear padding20"></div>
-        <p>
-          Website Template By
-          <a target="_blank" href="http://www.egrappler.com/">EGrappler</a>
-        </p>
+    <div class="row section-head">
+
+      <div class="two columns header-col">
+
+        <h1><span>Get In Touch.</span></h1>
+
       </div>
-      <div class="clear padding20"></div>
+
+      <div class="ten columns">
+
+        <p class="lead">I try to respond within 1-2 business days. Thank you for visiting!
+        </p>
+
+      </div>
+
     </div>
-  </footer>
-  <!-- /footer -->
-  <!--wrapper end-->
+
+    <div class="row">
+
+      <div class="eight columns">
+
+        <!-- form -->
+        <form action="" method="post" id="contactForm" name="contactForm">
+          <fieldset>
+
+            <div>
+              <label for="contactName">Name <span class="required">*</span></label>
+              <input type="text" value="" size="35" id="contactName" name="contactName">
+            </div>
+
+            <div>
+              <label for="contactEmail">Email <span class="required">*</span></label>
+              <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+            </div>
+
+            <div>
+              <label for="contactSubject">Subject</label>
+              <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+            </div>
+
+            <div>
+              <label for="contactMessage">Message <span class="required">*</span></label>
+              <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+            </div>
+
+            <div>
+              <button class="submit">Submit</button>
+              <span id="image-loader">
+                <img alt="" src="images/loader.gif">
+              </span>
+            </div>
+
+          </fieldset>
+        </form> <!-- Form End -->
+
+        <!-- contact-warning -->
+        <div id="message-warning"> Error boy</div>
+        <!-- contact-success -->
+        <div id="message-success">
+          <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+        </div>
+
+      </div>
+
+
+      <aside class="four columns footer-widgets">
+
+        <div class="widget widget_contact">
+
+          <h4>Alternative Contact Info</h4>
+          <p class="address">
+            April Graves<br>
+            912-507-6143 <br>
+            april.graves11@gmail.com
+          </p>
+
+        </div>
+        
+      </aside>
+
+    </div>
+
+  </section> <!-- Contact Section End-->
+
+
+  <!-- footer
+   ================================================== -->
+  <footer>
+
+    <div class="row">
+
+      <div class="twelve columns">
+
+        <ul class="copyright">
+          <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+        </ul>
+
+      </div>
+
+      <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+    </div>
+
+  </footer> <!-- Footer End-->
+
+  <!-- Java Script
+   ================================================== -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+  <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/waypoints.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script src="js/magnific-popup.js"></script>
+  <script src="js/init.js"></script>
+
 </body>
 
 </html>
